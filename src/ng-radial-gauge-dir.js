@@ -379,7 +379,7 @@ angular.module("ngRadialGauge",[]).directive('ngRadialGauge', ['$window', '$time
                             .ease('elastic')
                             .attr('transform', 'rotate('+needleAngle+')');
                         svg.selectAll('.mtt-graduationValueText')
-                        .text('[ ' + pValue.toFixed(pPrecision) + pValueUnit + ' ]') ;
+                        .text(pValue.toFixed(pPrecision) + pValueUnit) ;
                     } else {
                         svg.selectAll('.mtt-graduation-needle').remove();
                         svg.selectAll('.mtt-graduationValueText').remove();
